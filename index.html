@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persiba Bantul Official Website</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="./dist/css/output.css" />
+  </head>
+  <body>
+    <div class="hidden lg:flex bg-black font-ovp px-5 py-4 justify-end gap-2">
+      <a
+        href="#"
+        class="border border-white px-3 py-2 text-white hover:bg-utama transition duration-500"
+        >LOGIN</a
+      >
+      <a
+        href="#"
+        class="border border-white px-3 py-2 text-white hover:bg-utama transition duration-500"
+        >DAFTAR</a
+      >
+    </div>
+
+    <nav
+      class="py-3 px-10 bg-utama shadow font-ovp md:flex md:justify-between md:items-center"
+    >
+      <div class="flex items-center justify-between">
+        <a href="#" class="flex items-center">
+          <img
+            src="./asset/logo/Persiba_Bantul_logo.svg"
+            alt="Persiba"
+            class="h-16 mr-3"
+          />
+          <div>
+            <p class="text-2xl text-white font-bold">Persiba Bantul</p>
+            <p class="text-sm text-white">Laskar Sultan Agung</p>
+          </div>
+        </a>
+
+        <span
+          name="menu"
+          class="border border-white px-3 py-2 text-white hover:bg-white hover:text-black transition md:hidden"
+          onclick="Menu(this)"
+          >MENU</span
+        >
+      </div>
+
+      <ul
+        class="text-white text-xl md:flex md:items-center z-10 md:z-auto md:static absolute bg-black w-full left-0 md:w-auto md:bg-transparent pl-7 md:pl-0 md:opacity-100 opacity-0 -top-[400px] transition-all ease-in-out duration-500"
+        id="navbar"
+      >
+        <li class="mx-4 my-5 md:my-0">
+          <div class="group">
+            <a href="#">Berita</a>
+            <div
+              class="w-0 h-0.5 bg-white group-hover:w-full transition-all"
+            ></div>
+          </div>
+        </li>
+        <li class="mx-4 my-5 md:my-0">
+          <div class="group">
+            <a href="#">Pemain</a>
+            <div
+              class="w-0 h-0.5 bg-white group-hover:w-full transition-all"
+            ></div>
+          </div>
+        </li>
+        <li class="mx-4 my-5 md:my-0">
+          <div class="group">
+            <a href="#">Pertandingan</a>
+            <div
+              class="w-0 h-0.5 bg-white group-hover:w-full transition-all"
+            ></div>
+          </div>
+        </li>
+        <li class="mx-4 my-5 md:my-0">
+          <div class="group">
+            <a href="#">Tiket</a>
+            <div
+              class="w-0 h-0.5 bg-white group-hover:w-full transition-all"
+            ></div>
+          </div>
+        </li>
+        <li class="mx-4 my-5 md:my-0">
+          <div class="group">
+            <a href="#">Klub</a>
+            <div
+              class="w-0 h-0.5 bg-white group-hover:w-full transition-all"
+            ></div>
+          </div>
+        </li>
+        <li class="mx-4 my-5 md:my-0">
+          <div class="group">
+            <a href="#">Merch</a>
+            <div
+              class="w-0 h-0.5 bg-white group-hover:w-full transition-all"
+            ></div>
+          </div>
+        </li>
+
+        <div class="mt-4 text-center md:hidden mb-2">
+          <p class="text-sm">Gabung jadi Bantul Fans?</p>
+          <div class="flex gap-2 justify-center">
+            <a
+              href="#"
+              class="border border-white px-3 py-2 text-white hover:bg-utama transition duration-500"
+              >LOGIN</a
+            >
+            <a
+              href="#"
+              class="border border-white px-3 py-2 text-white hover:bg-utama transition duration-500"
+              >DAFTAR</a
+            >
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section>
+      <div
+        class="w-full h-96 bg-red-300 bg-[url('./asset/img/hero-2.webp')] bg-top bg-cover relative"
+      >
+        <div class="w-full h-full bg-gradient-to-t from-black">
+          <div
+            class="font-ovp absolute bottom-5 left-1/2 -translate-x-1/2 text-white"
+          >
+            <div class="h-[75%]">
+              <img
+                src="./asset/logo/Persiba_Bantul_logo.svg"
+                alt="Persiba"
+                class="mx-auto h-[54px]"
+              />
+            </div>
+            <h3 class="text-2xl md:text-4xl font-bold text-center">
+              COME ON YOU, <br />
+              LASKAR SULTAN AGUNG!
+            </h3>
+
+            <div class="text-center">
+              <button
+                class="py-2 px-5 border border-white rounded-full font-thin hover:bg-slate-300/50 transition duration-300"
+              >
+                GABUNG SEKARANG!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Berita -->
+    <section class="bg-slate-100">
+      <div class="container py-5 mx-auto">
+        <div
+          class="mb-4 py-4 px-10 bg-utama text-white font-ovp flex items-center"
+        >
+          <h4 class="text-3xl font-medium">TERBARU</h4>
+        </div>
+
+        <div class="flex flex-wrap">
+          <!-- Card Utama -->
+          <div
+            class="bg-white rounded-b-lg border-t-4 border-red-600 flex flex-wrap overflow-hidden group cursor-pointer w-full lg:w-2/3 mb-2 lg:mb-0"
+          >
+            <!-- Gambar -->
+            <div
+              class="w-full h-48 lg:w-2/3 lg:h-96 group relative overflow-hidden"
+            >
+              <div
+                class="w-full h-full bg-[url('./asset/img/hero-1.webp')] bg-center bg-cover absolute group-hover:scale-110 transition ease-in-out duration-1000"
+              >
+                <div
+                  class="w-full h-full bg-red-600 mix-blend-multiply opacity-0 group-hover:opacity-70 transition duration-1000"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Tulisan -->
+            <div class="px-4 py-5 font-ovp relative w-full lg:w-1/3">
+              <p class="text-slate-400 font-medium text-lg">INFO</p>
+              <h4
+                class="text-3xl font-bold group-hover:text-red-600 transition duration-500"
+              >
+                Lorem ipsum dolor sit amet.
+              </h4>
+              <p class="mt-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repellat, facilis?
+              </p>
+
+              <div class="absolute bottom-4 hidden lg:block">
+                <p>11 jam</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card berita lain -->
+          <div class="px-2 w-full lg:w-1/3">
+            <!-- Berita 1 -->
+            <div
+              class="bg-white rounded-b-lg border-t-4 border-utama overflow-hidden group mb-1 cursor-pointer relative"
+            >
+              <div class="absolute z-10 top-4 left-4">
+                <a
+                  href="#"
+                  class="border border-white p-3 text-white group-hover:bg-slate-400/50 transition duration-1000"
+                  >INFO</a
+                >
+              </div>
+              <div class="absolute bottom-4 left-4 z-10 font-ovp text-white">
+                <h4 class="font-bold text-2xl">Lorem ipsum dolor sit amet.</h4>
+                <p class="font-thin">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nisi.
+                </p>
+              </div>
+              <!-- Gambar -->
+              <div class="w-full h-48 overflow-hidden">
+                <div
+                  class="w-full h-full bg-[url('./asset/img/hero-1.webp')] bg-center bg-cover group-hover:scale-125 transition duration-1000 relative"
+                >
+                  <div class="w-full h-full bg-gradient-to-t from-black"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Berita 2 -->
+            <div
+              class="bg-white rounded-b-lg border-t-4 border-utama overflow-hidden group mb-1 cursor-pointer relative"
+            >
+              <div class="absolute z-10 top-4 left-4">
+                <a
+                  href="#"
+                  class="border border-white p-3 text-white group-hover:bg-slate-400/50 transition duration-1000"
+                  >INFO</a
+                >
+              </div>
+              <div class="absolute bottom-4 left-4 z-10 font-ovp text-white">
+                <h4 class="font-bold text-2xl">Lorem ipsum dolor sit amet.</h4>
+                <p class="font-thin">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nisi.
+                </p>
+              </div>
+              <!-- Gambar -->
+              <div class="w-full h-48 overflow-hidden">
+                <div
+                  class="w-full h-full bg-[url('./asset/img/hero-1.webp')] bg-center bg-cover group-hover:scale-125 transition duration-1000 relative"
+                >
+                  <div class="w-full h-full bg-gradient-to-t from-black"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lihat semua -->
+        <div class="w-full h-0.5 bg-utama my-10 relative">
+          <a
+            href="#"
+            class="bg-slate-100 border border-utama text-utama font-ovp py-3 px-5 absolute hover:bg-utama hover:text-white transition left-1/2 -translate-x-1/2 -top-5"
+            >LIHAT SEMUA</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Pertandingan -->
+    <section class="bg-slate-100">
+      <div class="container py-5 mx-auto">
+        <div class="flex flex-wrap gap-2 justify-center">
+          <!-- Card 1 -->
+          <div class="w-80 aspect-square bg-white px-3 py-4 group">
+            <h5 class="text-xl font-semibold font-ovp text-center">
+              Pertandingan Selanjutnya
+            </h5>
+
+            <div class="">
+              <img
+                src="./asset/logo/Liga 3 Indonesia.png"
+                alt="Liga 3"
+                class="w-[60px] mx-auto"
+              />
+              <p class="font-semibold font-ovp text-black text-lg text-center">
+                Liga 3
+              </p>
+            </div>
+
+            <div class="flex gap-3">
+              <div class="w-1/3 h-36">
+                <div class="">
+                  <img
+                    src="./asset/logo/Persiba_Bantul_logo.svg"
+                    alt="Persiba"
+                    class="mx-auto max-h-[90px]"
+                  />
+                </div>
+
+                <p
+                  class="text-black text-center text-xs font-bold font-ovp mt-2"
+                >
+                  Persiba Bantul
+                </p>
+              </div>
+
+              <!-- Skor -->
+              <div class="w-1/3 h-36">
+                <div
+                  class="w-full h-1/3 bg-black rounded-lg mt-[30px] flex items-center group-hover:bg-utama transition duration-500"
+                >
+                  <p
+                    class="mx-auto text-white text-3xl font-bold font-agdasima"
+                  >
+                    16:00
+                  </p>
+                </div>
+              </div>
+
+              <div class="w-1/3 h-36">
+                <img
+                  src="./asset/logo/Persiba_Bantul_logo.svg"
+                  alt="Persiba"
+                  class="mx-auto max-h-[90px]"
+                />
+                <p
+                  class="text-black text-center text-xs font-bold font-ovp mt-2"
+                >
+                  Persibom Bolang Mongondoow
+                </p>
+              </div>
+            </div>
+
+            <div class="font-ovp text-xs text-slate-400 text-center">
+              <p>
+                Sabtu, 13 Juli 2023 <br />
+                16.00 WIB - Stadion Sultan Agung
+              </p>
+            </div>
+
+            <div class="mt-3 text-center">
+              <a
+                href="#"
+                class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                >BERITA PERTANDINGAN</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="w-80 aspect-square bg-white px-3 py-4 group">
+            <h5 class="text-xl font-semibold font-ovp text-center">
+              Pertandingan Sebelumnya
+            </h5>
+
+            <div class="">
+              <img
+                src="./asset/logo/Liga 3 Indonesia.png"
+                alt="Liga 3"
+                class="w-[60px] mx-auto"
+              />
+              <p class="font-semibold font-ovp text-black text-lg text-center">
+                Liga 3
+              </p>
+            </div>
+
+            <div class="flex gap-3">
+              <div class="w-1/3 h-36">
+                <div class="">
+                  <img
+                    src="./asset/logo/Persiba_Bantul_logo.svg"
+                    alt="Persiba"
+                    class="mx-auto max-h-[90px]"
+                  />
+                </div>
+
+                <p
+                  class="text-black text-center text-xs font-bold font-ovp mt-2"
+                >
+                  Persiba Bantul
+                </p>
+              </div>
+
+              <!-- Skor -->
+              <div class="w-1/3 h-36">
+                <div
+                  class="w-full h-1/3 bg-black rounded-lg mt-[30px] flex items-center group-hover:bg-utama transition duration-500"
+                >
+                  <p
+                    class="mx-auto text-white text-3xl font-bold font-agdasima"
+                  >
+                    2-1
+                  </p>
+                </div>
+              </div>
+
+              <div class="w-1/3 h-36">
+                <img
+                  src="./asset/logo/Persiba_Bantul_logo.svg"
+                  alt="Persiba"
+                  class="mx-auto max-h-[90px]"
+                />
+                <p
+                  class="text-black text-center text-xs font-bold font-ovp mt-2"
+                >
+                  Persibom Bolang Mongondoow
+                </p>
+              </div>
+            </div>
+
+            <div class="font-ovp text-xs text-slate-400 text-center">
+              <p>
+                Sabtu, 13 Juli 2023 <br />
+                16.00 WIB - Stadion Sultan Agung
+              </p>
+            </div>
+
+            <div class="mt-3 text-center">
+              <a
+                href="#"
+                class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                >BERITA PERTANDINGAN</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="w-80 aspect-square bg-white px-3 py-4 group flex items-center justify-center"
+          >
+            <div>
+              <h5 class="text-xl font-semibold font-ovp text-center">
+                Semua Pertandingan
+              </h5>
+              <div class="mt-3 text-center">
+                <a
+                  href="#"
+                  class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                  >CEK DI SINI</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri -->
+    <section class="bg-black pb-10">
+      <div
+        class="mb-4 py-4 px-10 lg:px-24 bg-utama text-white font-ovp flex items-center"
+      >
+        <h4 class="text-3xl font-medium">GALERI</h4>
+      </div>
+
+      <!-- Foto -->
+      <div class="container px-10 lg:px-24 font-ovp">
+        <div class="flex text-white">
+          <h4 class="text-xl">FOTO</h4>
+          <div class="mx-4">|</div>
+          <a href="#" class="hover:text-utama">Lihat semua</a>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <!-- Foto 1 -->
+          <div
+            class="w-full lg:w-72 aspect-square bg-red-400 overflow-hidden group relative cursor-pointer"
+          >
+            <div class="w-full h-full absolute">
+              <div
+                class="w-full h-full bg-[url('./asset/img/foto-1.webp')] bg-top bg-cover group-hover:scale-125 transition duration-1000"
+              ></div>
+            </div>
+            <!-- Tag -->
+            <span
+              class="absolute top-4 right-4 p-2 border border-white text-white text-sm font-ovp font-thin select-none"
+              >PERTANDINGAN</span
+            >
+
+            <!-- Judul -->
+            <div
+              class="w-full h-1/3 bg-black/50 absolute bottom-0 px-5 py-4 text-white font-ovp"
+            >
+              <h5
+                class="text-xl break-all group-hover:text-utama transition duration-1000"
+              >
+                Lorem ipsum dolor sit amet consectetur lorem.
+              </h5>
+              <p class="">12 Juli 2023</p>
+            </div>
+
+            <div
+              class="absolute bottom-0 w-1/2 h-0.5 bg-utama group-hover:w-full transition-all duration-1000"
+            ></div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div
+            class="w-full lg:w-72 aspect-square bg-red-400 overflow-hidden group relative cursor-pointer"
+          >
+            <div class="w-full h-full absolute">
+              <div
+                class="w-full h-full bg-[url('./asset/img/foto-2.jpg')] bg-top bg-cover group-hover:scale-125 transition duration-1000"
+              ></div>
+            </div>
+            <!-- Tag -->
+            <span
+              class="absolute top-4 right-4 p-2 border border-white text-white text-sm font-ovp font-thin select-none"
+              >PERTANDINGAN</span
+            >
+
+            <!-- Judul -->
+            <div
+              class="w-full h-1/3 bg-black/50 absolute bottom-0 px-5 py-4 text-white font-ovp"
+            >
+              <h5
+                class="text-xl break-all group-hover:text-utama transition duration-1000"
+              >
+                Lorem ipsum dolor sit amet consectetur lorem.
+              </h5>
+              <p class="">12 Juli 2023</p>
+            </div>
+
+            <div
+              class="absolute bottom-0 w-1/2 h-0.5 bg-utama group-hover:w-full transition-all duration-1000"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flex text-white my-4">
+          <h4 class="text-xl">VIDEO</h4>
+          <div class="mx-4">|</div>
+          <a href="#" class="hover:text-utama">Lihat semua</a>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <div class="h-52 lg:h-72 aspect-video relative">
+            <!-- Judul -->
+            <div
+              class="w-full h-1/3 bg-black/50 absolute bottom-0 px-5 py-4 text-white font-ovp"
+            >
+              <h5
+                class="text-sm lg:text-lg break-all group-hover:text-utama transition duration-1000"
+              >
+                Lorem ipsum dolor sit amet consectetur lorem.
+              </h5>
+              <p class="">12 Juli 2023</p>
+            </div>
+
+            <iframe
+              src="https://youtu.be/9Fhni13vcsM"
+              frameborder="0"
+              class="w-full h-full"
+            ></iframe>
+          </div>
+          <div class="h-52 lg:h-72 aspect-video relative">
+            <!-- Judul -->
+            <div
+              class="w-full h-1/3 bg-black/50 absolute bottom-0 px-5 py-4 text-white font-ovp"
+            >
+              <h5
+                class="text-sm lg:text-lg break-all group-hover:text-utama transition duration-1000"
+              >
+                Lorem ipsum dolor sit amet consectetur lorem.
+              </h5>
+              <p class="">12 Juli 2023</p>
+            </div>
+
+            <iframe
+              src="https://youtu.be/9Fhni13vcsM"
+              frameborder="0"
+              class="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Squad -->
+    <div class="container mx-auto my-4 flex flex-wrap">
+      <!-- Utama -->
+      <div class="w-full lg:w-2/3">
+        <div
+          class="mb-4 py-3 px-10 bg-utama text-white font-ovp flex items-center"
+        >
+          <h4 class="text-2xl font-medium">PEMAIN</h4>
+          <h5 class="text-xl mx-3">LIGA 3 2023</h5>
+        </div>
+
+        <div class="columns-1 lg:columns-4 px-4 lg:px-0">
+          <!-- Kiper -->
+          <div
+            class="w-full rounded rounded-b-lg bg-utama overflow-hidden relative cursor-pointer group"
+          >
+            <div class="absolute top-4 right-4 w-10">
+              <img src="./asset/logo/Persiba_Bantul_logo.svg" alt="Persiba" />
+            </div>
+            <div
+              class="w-full h-full bg-gradient-to-t from-black absolute"
+            ></div>
+            <img src="./asset/img/squad-2.png" alt="Goalkeeper" />
+
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2">
+              <h5
+                class="text-white text-xl font-ovp font-bold group-hover:text-utama"
+              >
+                KIPER
+              </h5>
+            </div>
+
+            <div
+              class="absolute bottom-0 w-0 h-1 group-hover:w-full bg-utama transition-all duration-500"
+            ></div>
+          </div>
+
+          <!-- Bertahan -->
+          <div
+            class="w-full rounded rounded-b-lg bg-utama overflow-hidden relative cursor-pointer group"
+          >
+            <div class="absolute top-4 right-4 w-10">
+              <img src="./asset/logo/Persiba_Bantul_logo.svg" alt="Persiba" />
+            </div>
+            <div
+              class="w-full h-full bg-gradient-to-t from-black absolute"
+            ></div>
+            <img src="./asset/img/squad-4.png" alt="Goalkeeper" />
+
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2">
+              <h5
+                class="text-white text-xl font-ovp font-bold group-hover:text-utama"
+              >
+                BERTAHAN
+              </h5>
+            </div>
+
+            <div
+              class="absolute bottom-0 w-0 h-1 group-hover:w-full bg-utama transition-all duration-500"
+            ></div>
+          </div>
+          <!-- GELANDANG -->
+          <div
+            class="w-full rounded rounded-b-lg bg-utama overflow-hidden relative cursor-pointer group"
+          >
+            <div class="absolute top-4 right-4 w-10">
+              <img src="./asset/logo/Persiba_Bantul_logo.svg" alt="Persiba" />
+            </div>
+            <div
+              class="w-full h-full bg-gradient-to-t from-black absolute"
+            ></div>
+            <img src="./asset/img/squad-3.png" alt="Goalkeeper" />
+
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2">
+              <h5
+                class="text-white text-xl font-ovp font-bold group-hover:text-utama"
+              >
+                GELANDANG
+              </h5>
+            </div>
+
+            <div
+              class="absolute bottom-0 w-0 h-1 group-hover:w-full bg-utama transition-all duration-500"
+            ></div>
+          </div>
+          <!-- PENYERANG -->
+          <div
+            class="w-full rounded rounded-b-lg bg-utama overflow-hidden relative cursor-pointer group mb-2"
+          >
+            <div class="absolute top-4 right-4 w-10">
+              <img src="./asset/logo/Persiba_Bantul_logo.svg" alt="Persiba" />
+            </div>
+            <div
+              class="w-full h-full bg-gradient-to-t from-black absolute"
+            ></div>
+            <img src="./asset/img/squad-1.png" alt="Striker" />
+
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2">
+              <h5
+                class="text-white text-xl font-ovp font-bold group-hover:text-utama"
+              >
+                PENYERANG
+              </h5>
+            </div>
+
+            <div
+              class="absolute bottom-0 w-0 h-1 group-hover:w-full bg-utama transition-all duration-500"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Akademi -->
+      <div class="w-full lg:w-1/3 px-2">
+        <div
+          class="mb-4 py-3 px-10 bg-utama text-white font-ovp flex items-center"
+        >
+          <h4 class="text-2xl font-medium">AKADEMI</h4>
+        </div>
+        <div
+          class="bg-white rounded-b-lg border-t-4 border-utama overflow-hidden group mb-1 cursor-pointer relative"
+        >
+          <div class="absolute bottom-4 left-4 z-10 font-ovp text-white">
+            <h4 class="font-bold text-2xl">Informasi Kelompok Umur</h4>
+            <p class="font-thin">Kelompok Umur 13, 15, dan 17. Cek disini!</p>
+          </div>
+          <!-- Gambar -->
+          <div class="w-full h-48 overflow-hidden">
+            <div
+              class="w-full h-full bg-[url('./asset/img/hero-1.webp')] bg-center bg-cover group-hover:scale-125 transition duration-1000 relative"
+            >
+              <div class="w-full h-full bg-gradient-to-t from-black"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Merch & Ticketing -->
+    <!-- Hero -->
+    <section>
+      <div
+        class="w-full h-96 bg-red-300 bg-[url('./asset/img/hero-2.webp')] bg-top bg-cover relative"
+      >
+        <div class="w-full h-full bg-gradient-to-t from-black">
+          <div
+            class="font-ovp absolute bottom-5 left-1/2 -translate-x-1/2 text-white"
+          >
+            <div class="h-[75%]">
+              <img
+                src="./asset/logo/Persiba_Bantul_logo.svg"
+                alt="Persiba"
+                class="mx-auto h-[54px]"
+              />
+            </div>
+            <h3 class="text-2xl md:text-4xl font-bold text-center">
+              NGANGGO ONLINE, ORA ANGEL!
+            </h3>
+
+            <div class="text-center">
+              <button
+                class="py-2 px-5 border border-white rounded-full font-thin hover:bg-slate-300/50 transition duration-300"
+              >
+                BELI MERCHANDISE
+              </button>
+              <button
+                class="py-2 px-5 border border-white rounded-full font-thin hover:bg-slate-300/50 transition duration-300"
+              >
+                BELI TIKET
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- merch and ticket -->
+    <section class="bg-slate-100">
+      <div class="container mx-auto py-4 flex flex-wrap font-ovp">
+        <!-- merch -->
+        <div class="w-full lg:w-2/3 px-2 lg:px-0 mb-2">
+          <h4
+            class="border-2 border-b-utama border-t-0 border-x-0 text-3xl font-bold"
+          >
+            Merchandise Klub
+          </h4>
+
+          <div class="flex flex-wrap lg:gap-2 mt-4">
+            <!-- merch 1 -->
+            <div
+              class="w-1/2 lg:w-60 h-96 bg-white rounded-b-lg border-t-4 border-t-utama px-3 group"
+            >
+              <div class="max-h-2/3 mx-auto overflow-hidden">
+                <img
+                  src="./asset/img/merch-1.jpeg"
+                  class="group-hover:scale-110 transition duration-500"
+                  alt="Kaos"
+                />
+              </div>
+
+              <h5 class="text-utama text-2xl text-center font-semibold">
+                JERSEY AUTHENTIC
+              </h5>
+
+              <p class="text-md font-semibold text-center">Rp. 249.900</p>
+
+              <div class="text-center mt-3">
+                <a
+                  href="#"
+                  class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                  >BELI SEKARANG</a
+                >
+              </div>
+            </div>
+            <!-- merch 1 -->
+            <div
+              class="w-1/2 lg:w-60 h-96 bg-white rounded-b-lg border-t-4 border-t-utama px-3 group"
+            >
+              <div class="max-h-2/3 mx-auto overflow-hidden">
+                <img
+                  src="./asset/img/merch-1.jpeg"
+                  class="group-hover:scale-110 transition duration-500"
+                  alt="Kaos"
+                />
+              </div>
+
+              <h5 class="text-utama text-2xl text-center font-semibold">
+                JERSEY AUTHENTIC
+              </h5>
+
+              <p class="text-md font-semibold text-center">Rp. 249.900</p>
+
+              <div class="text-center mt-3">
+                <a
+                  href="#"
+                  class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                  >BELI SEKARANG</a
+                >
+              </div>
+            </div>
+            <!-- merch 1 -->
+            <div
+              class="w-1/2 lg:w-60 h-96 bg-white rounded-b-lg border-t-4 border-t-utama px-3 group"
+            >
+              <div class="max-h-2/3 mx-auto overflow-hidden">
+                <img
+                  src="./asset/img/merch-1.jpeg"
+                  class="group-hover:scale-110 transition duration-500"
+                  alt="Kaos"
+                />
+              </div>
+
+              <h5 class="text-utama text-2xl text-center font-semibold">
+                JERSEY AUTHENTIC
+              </h5>
+
+              <p class="text-md font-semibold text-center">Rp. 249.900</p>
+
+              <div class="text-center mt-3">
+                <a
+                  href="#"
+                  class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                  >BELI SEKARANG</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TIket -->
+        <div class="w-full lg:w-1/3 px-1">
+          <h4
+            class="border-2 border-b-utama border-t-0 border-x-0 text-3xl font-bold"
+          >
+            TIKET
+          </h4>
+
+          <div
+            class="w-full bg-white border-t-4 border-t-utama rounded-b-lg py-4 px-5 my-3"
+          >
+            <h5 class="text-utama text-2xl text-center font-semibold">
+              TICKET STORE
+            </h5>
+            <p class="text-slate-500">
+              Informasi lokasi Penyalur tiket resmi pertandingan Persiba Bantul.
+            </p>
+            <div class="my-3">
+              <a
+                href="#"
+                class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                >CEK DI SINI</a
+              >
+            </div>
+          </div>
+
+          <!-- TIKET ONLINE -->
+          <div
+            class="w-full bg-white border-t-4 border-t-utama rounded-b-lg py-4 px-5 my-3"
+          >
+            <h5 class="text-utama text-2xl text-center font-semibold">
+              BELI TIKET ONLINE
+            </h5>
+            <p class="text-slate-500">
+              Pesan tiket, tukarkan saat hari-H pertandingan!
+            </p>
+            <div class="my-3">
+              <a
+                href="#"
+                class="border border-utama px-3 py-2 text-utama hover:bg-utama hover:text-white transition duration-500"
+                >CEK DI SINI</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-black pt-10 px-8 pb-8 border-t-4 border-red-700 selection:bg-red-600"
+    >
+      <div class="container flex flex-wrap">
+        <div
+          class="flex items-center w-full md:w-1/3 justify-center md:justify-start mb-4"
+        >
+          <div class="mr-4">
+            <img src="./asset/logo/Persiba_Bantul_logo.svg" alt="Persiba" />
+          </div>
+          <div class="text-white font-ovp">
+            <p class="text-3xl font-bold">LASULTA</p>
+            <p class="font-thin">Laskar Sultan Agung</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-5 w-full md:w-2/3 justify-center">
+          <div>
+            <img
+              src="./asset/logo/logo_icon_corsa.png"
+              alt="Logo CORSA"
+              class="max-h-16"
+            />
+          </div>
+
+          <div>
+            <img
+              src="./asset/logo/logo_icon_corsa.png"
+              alt="Logo CORSA"
+              class="max-h-16"
+            />
+          </div>
+
+          <div>
+            <img
+              src="./asset/logo/logo_icon_corsa.png"
+              alt="Logo CORSA"
+              class="max-h-16"
+            />
+          </div>
+          <div>
+            <img
+              src="./asset/logo/logo_icon_corsa.png"
+              alt="Logo CORSA"
+              class="max-h-16"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="font-ovp text-white mt-4">
+        <p class="font-bold">Alamat Kantor</p>
+        <p>Gedung xxx, Jalan imogiri timur No. 150 KM.5, Bantul</p>
+        <p class="font-bold mt-3">Kontak</p>
+        <p>+62=xx=xxx=xxx</p>
+        <p>Persibabantul@persiba.com</p>
+      </div>
+
+      <div class="flex items-center mt-4">
+        <!-- Twitter -->
+        <a
+          href="#"
+          class="w-9 h-9 p-2 mr-4 rounded-full border border-white text-white hover:bg-red-600 hover:border-black hover:text-black transition"
+        >
+          <svg
+            role="img"
+            class="fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Twitter</title>
+            <path
+              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+            />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="#"
+          class="w-9 h-9 p-2 mr-4 rounded-full border border-white text-white hover:bg-red-600 hover:border-black hover:text-black transition"
+        >
+          <svg
+            role="img"
+            class="fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Instagram</title>
+            <path
+              d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+            />
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a
+          href="#"
+          class="w-9 h-9 p-2 mr-4 rounded-full border border-white text-white hover:bg-red-600 hover:border-black hover:text-black transition"
+        >
+          <svg
+            role="img"
+            class="fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Facebook</title>
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="w-full border-t border-red-800 mt-4"></div>
+      <p class="text-center text-red-500 mt-2 font-ovp font-thin">
+        Dibuat dengan bangga. Bantul 2023. oleh @bomsiwor
+      </p>
+    </footer>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("#navbar");
+
+        let identifier = e.getAttribute("name");
+
+        identifier === "menu"
+          ? (e.setAttribute("name", "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : (e.setAttribute("name", "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
